@@ -33,3 +33,9 @@ jobs:
 
       - name: Run Screenshot Tests
         run: ./gradlew verifyRoborazziDebug
+
+      - name: Upload test reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-reports
+          path: build/reports
