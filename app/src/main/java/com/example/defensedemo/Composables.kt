@@ -48,7 +48,7 @@ fun SettingsScreen() {
 
         SearchBar(query = searchQuery, onQueryChange = { searchQuery = it })
 
-        Spacer(modifier = Modifier.height(80.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
