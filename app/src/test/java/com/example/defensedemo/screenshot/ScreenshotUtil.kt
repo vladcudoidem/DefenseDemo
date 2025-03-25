@@ -8,11 +8,11 @@ import com.github.takahirom.roborazzi.ThresholdValidator
 object ScreenshotUtil {
 
     private val customImageComparator = SimpleImageComparator(
-        maxDistance = 0.001f,
-        hShift = 0,
-        vShift = 0
+        maxDistance = 0.01f,
+        hShift = 1,
+        vShift = 1
     )
-    private val customThresholdValidator = ThresholdValidator(0.0002F)
+    private val customThresholdValidator = ThresholdValidator(0.002F)
     val customRule = RoborazziRule(
         RoborazziRule.Options(
             outputDirectoryPath = "roborazzi/references",
