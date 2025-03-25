@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - presentation
   pull_request:
     branches:
       - main

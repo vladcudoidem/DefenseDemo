@@ -19,9 +19,7 @@ data class Setting(val title: String, val description: String)
 
 @Composable
 fun SettingsScreen() {
-    var searchQuery by remember {
-        mutableStateOf("")
-    }
+    var searchQuery by remember { mutableStateOf("") }
 
     val settingsList = remember {
         listOf(
