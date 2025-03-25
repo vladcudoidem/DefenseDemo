@@ -32,13 +32,15 @@ jobs:
         run: ./gradlew verifyRoborazziDebug
 
       - name: Upload test reports
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: app/build/reports
 
       - name: Upload Roborazzi outputs
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: roborazzi-outputs
-          path: app/build/outputs
+          path: app/build/outputs/roborazzi
