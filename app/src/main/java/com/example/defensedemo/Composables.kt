@@ -97,6 +97,7 @@ fun SettingItem(title: String, description: String) {
         ) {
             Text(text = title, style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(4.dp))
+
             Text(text = description, style = MaterialTheme.typography.bodySmall, color = Color.Gray)
         }
     }
