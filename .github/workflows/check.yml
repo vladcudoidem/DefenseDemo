@@ -37,3 +37,9 @@ jobs:
         with:
           name: test-reports
           path: app/build/reports
+
+      - name: Upload Roborazzi outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: roborazzi-outputs
+          path: app/build/outputs
